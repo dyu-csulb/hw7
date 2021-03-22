@@ -51,15 +51,12 @@ function myFunction() {
     }
   };
 
-  let e = document.getElementById("house");
-  myArray = [];
-  myArray = getCharacters(e.value)
-   
-  var ul = document.getElementById("characters");
+  let e = document.getElementById("house");   
+  let ul = document.getElementById("characters");
   
-  for (var i = 0; i < myArray.length; i++) {
-      var name = myArray[i];
-      var li = document.createElement('li');
+  for (let i = 0; i < getCharacters(e.value).length; i++) {
+      let name = getCharacters(e.value)[i];
+      let li = document.createElement('li');
       li.appendChild(document.createTextNode(name));
       ul.appendChild(li);
   }
