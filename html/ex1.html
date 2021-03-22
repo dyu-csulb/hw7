@@ -79,17 +79,23 @@
         <hr />
         <div class="container">
         <div id='div-body' style="text-align: left;"> 
-
+            <h3>A few of the Game of Thrones characters</h3>
+            <form>
+              <label for="house">House</label>:
+              <select name="house" id="house">
+                  <option value="" selected>Select a house</option>
+              </select>
+            </form>
+            
+            <p>
+              <ul id="characters"></ul>
+            </p>
+            
         </div>
-       
-        <div class="row" style="text-align: left;">
-            <b>Answer:</b> <label id='lblInstruction' style="color: red;">Click 'run program' to view results </label>
-         
-            <label id='lblMessage'  ></label>
-        </div>
+    
         <hr />
-        <button type='button' class="btn btn-sm btn-primary" onclick="myFunction()">Run Program</button>
-        <button type='button' class="btn btn-sm btn-primary" onclick="clearValues()">Clear</button>
+        <!-- <button type='button' class="btn btn-sm btn-primary" onclick="myFunction()">Run Program</button>
+        <button type='button' class="btn btn-sm btn-primary" onclick="clearValues()">Clear</button> -->
         <button type='button' class="btn btn-sm btn-danger btnOverLayClose"  >Close</button>
     </div>
     </div>
