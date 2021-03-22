@@ -22,9 +22,9 @@ function myLoadEvent() {
     }
   ];
   
-  var x = document.getElementById("house");
-  for (var i = 0; i < houses.length; i++) { 
-    var option = document.createElement("option");
+  let x = document.getElementById("house");
+  for (let i = 0; i < houses.length; i++) { 
+    let option = document.createElement("option");
     option.text = houses[i].name;
     option.value = houses[i].code;
     x.add(option);
@@ -35,7 +35,6 @@ function myLoadEvent() {
 
 function myFunction() {
   document.getElementById("characters").innerHTML = "";
-
   const getCharacters = houseCode => {
     switch (houseCode) {
       case "ST":

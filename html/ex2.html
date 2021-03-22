@@ -15,6 +15,7 @@
       Local References
     ==================--> 
     <link href="../css/site.css" rel="stylesheet">
+    <link href="../css/ex2.css" rel="stylesheet">
     <script src="../js/site.js"></script>
     <script src="../js/ex2.js"></script>
 
@@ -80,17 +81,18 @@
         </table> 
         <hr />
         <div class="container">
-
-      
- 
-            <div class="row" style="text-align: left;">
-                <b>Answer:</b> <label id='lblInstruction' style="color: red;">Click 'run program' to view results </label>
-             
-                <label id='lblMessage'  ></label>
-            </div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="country">Enter a country name</label>: &nbsp;
+                    </td>
+                    <td>
+                        <input style="width: 300px;" class="form-control" type="text" id="country">
+                        <div style="width: 300px;" id="suggestions"></div>
+                    </td>
+                </tr>
+            </table>
             <hr />
-            <button type='button' class="btn btn-sm btn-primary" onclick="myFunction()">Run Program</button>
-            <button type='button' class="btn btn-sm btn-primary" onclick="clearValues()">Clear</button>
             <button type='button' class="btn btn-sm btn-danger btnOverLayClose"  >Close</button>
         </div>
 
